@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title> reelyActive Location Demo </title>
+    <link rel="stylesheet" href="style/main.css">
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){ refreshData(); });
+
+      function refreshData() {
+        $('#locations').load('locations');
+        setTimeout(refreshData, 1000);
+      }
+    </script>
+  </head>
+  <body>
+    <!----- Upper section gives a visualization of reelceivers ----->
+    <div id="reel">
+      <img src="images/reel.jpg">
+    </div>
+    <!----- Lower section gives a visualization of iPod and data ----->
+    <div id="locations"></div>
+  </body>
+</html>
