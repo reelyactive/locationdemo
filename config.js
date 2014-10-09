@@ -8,8 +8,10 @@ config.reelceiver = {};
 
 config.httpport = 3000;
 
-config.listenerprotocol = 'udp';
-config.listenersource = '192.168.1.101:50000';
+config.middleware = { n: 3 };
+
+config.listener = { protocol: 'udp',
+                    path: '192.168.1.101:50000' };
 
 config.reelceiver.closest =  '001bc50940810000';
 config.reelceiver.middle =   '001bc50940810001';

@@ -10,7 +10,7 @@
     "reelyActive",
     "indoor location"
   ],
-  "version": "0.0.0",
+  "version": "0.0.1",
   "engines": {
     "node": "^0.10.0"
   },
@@ -20,7 +20,7 @@
     "url": "https://github.com/reelyactive/locationdemo.git"
   },
   "dependencies": {
-    "barnowl": "^0.3.8",
+    "barnowl": ">=0.4.1",
     "nedb": ">=0.11.0",
     "express": ">=4.0.0"
   },

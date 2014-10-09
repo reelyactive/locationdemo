@@ -6,14 +6,14 @@ var config = require('./config');
 var REELYACTIVE_UUID = "7265656c794163746976652055554944";
 var EMPTY_DEVICE_DIV = "<div class=\"device\">&nbsp;</div>";
 
-var middleware = new barnOwl(3);
+var middleware = new barnOwl(config.middleware);
 var identifierTable = {};
 var app = express();
 var db = new nedb();
 
 
 /* Tell barnowl where to listen */
-middleware.bind(config.listenerprotocol, config.listenersource);
+middleware.bind(config.listener);
 
 
 /* Create the HTTP server */
